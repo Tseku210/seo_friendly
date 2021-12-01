@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+#circle {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.mobile {
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+    left: 8vw;
+}
+.feature img {
+    max-width: 70px;
+}
