@@ -1,20 +1,75 @@
 // iphone
-var circle = document.getElementById("circle");
+// var circle = document.getElementById("circle");
 var upBtn = document.getElementById("upBtn");
 var downBtn = document.getElementById("downBtn");
+var one = document.querySelector(".one");
+var two = document.querySelector(".two");
+var three = document.querySelector(".three");
+var four = document.querySelector(".four");
+let desc = [one, two, three, four];
+let i = 0;
+// var rotateValue = circle.style.transform;
+// var rotateSum;
 
-var rotateValue = circle.style.transform;
-var rotateSum;
-
-downBtn.onclick = function(){
-    rotateSum = rotateValue + "rotate(90deg)";
-    circle.style.transform = rotateSum;
-    rotateValue = rotateSum;
-}
 upBtn.onclick = function(){
-    rotateSum = rotateValue + "rotate(-90deg)";
-    circle.style.transform = rotateSum;
-    rotateValue = rotateSum; 
+  if (i == 0){
+    four.style.display = "none";
+    one.style.display = "flex";
+    three.style.display = "none";
+    two.style.display = "none";
+  } else if (i == 1) {
+    one.style.display = "none";
+    two.style.display = "flex";
+    three.style.display = "none";
+    four.style.display = "none";
+  } else if (i == 2) {
+    three.style.display = "flex";
+    two.style.display = "none";
+    four.style.display = "none";
+    one.style.display = "none";
+  } else if ( i == 3) {
+    three.style.display = "none";
+    four.style.display = "flex";
+    one.style.display = "none";
+    two.style.display = "none";
+  } else if (i == 4) {
+    i = 0;
+    four.style.display = "none";
+    one.style.display = "flex";
+    two.style.display = "none";
+    three.style.display = "none";
+  }
+  i++;
+}
+downBtn.onclick = function(){
+  if (i == 0){
+    four.style.display = "none";
+    one.style.display = "flex";
+    three.style.display = "none";
+    two.style.display = "none";
+  } else if (i == 1) {
+    one.style.display = "none";
+    four.style.display = "flex";
+    two.style.display = "none";
+    three.style.display = "none";
+  } else if (i == 2) {
+    three.style.display = "flex";
+    four.style.display = "none";
+    two.style.display = "none";
+    one.style.display = "none";
+  } else if (i == 3) {
+    three.style.display = "none";
+    two.style.display = "flex";
+    four.style.display = "none";
+    one.style.display = "none";
+  } else if (i == 4) {
+    i = 0;
+    two.style.display = "none";
+    one.style.display = "flex";
+    four.style.display = "none";
+    three.style.display = "none";
+  }
+  i++;
 }
 const menuToggle = document.querySelector(".toggle");
 const showcase = document.querySelector(".information");
