@@ -413,6 +413,7 @@ body.active {
     }
     .main_container {
         flex-wrap: wrap;
+        height: auto;
     }
     .main_content {
         text-align: center;
@@ -441,6 +442,24 @@ body.active {
     }
     #main_img2 {
         max-width: 50%;
+    }
+    .menu {
+        width: 200px;
+    }
+    .showcase.active {
+        right: 200px;
+    }
+    .menu ul li a {
+        font-size: 1.3rem;
+    }
+    #main {
+        height: auto;
+    }
+    #myBtn {
+        right: 10px;
+    }
+    #program {
+        height: auto;
     }
 }
 @media (max-width: 430px){
